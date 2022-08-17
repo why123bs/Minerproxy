@@ -97,13 +97,13 @@ install_allminer() {
     mkdir -p ${updatePath}
 
     cd ${updatePath}
-    wget --no-check-certificate https://raw.githubusercontent.com/Allminer/minerProxy/master/allminer
+    wget --no-check-certificate https://raw.githubusercontent.com/why123bs/minerProxy/master/allminer
     if [ $? -ne 0 ]; then
         exit -1;
     fi
     chmod +x allminer
     
-    wget --no-check-certificate https://raw.githubusercontent.com/Allminer/minerProxy/master/version
+    wget --no-check-certificate https://raw.githubusercontent.com/why123bs/minerProxy/master/version
         if [ $? -ne 0 ]; then
         exit -1;
     fi
@@ -131,7 +131,7 @@ update_allminer() {
     mkdir -p ${updatePath}
 
     cd ${updatePath}
-       wget --no-check-certificate https://raw.githubusercontent.com/Allminer/minerProxy/master/version
+       wget --no-check-certificate https://raw.githubusercontent.com/why123bs/minerProxy/master/version
     if [ $? -ne 0 ]; then
         exit -1;
     fi
